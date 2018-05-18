@@ -1,4 +1,3 @@
-require 'pry'
 def reverse_each_word(string)
   new_string = []
   new_array = []
@@ -11,12 +10,12 @@ end
 
 def reverse_each_word(string)
   new_string = []
+  new_array = []
   array = string.split(" ")
   array.collect do |word|
-    "#{word.reverse}"
+    new_array.push(word.reverse)
   end
-  new_string = array.join(" ")
-  binding.pry
+  new_string = new_array.join(" ")
 end
 
 reverse_each_word("Hello my name is daniel!")
