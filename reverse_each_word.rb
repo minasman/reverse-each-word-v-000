@@ -18,4 +18,4 @@ def reverse_each_word(string)
   new_string = new_array.join(" ")
 end
 
-reverse_each_word("Hello my name is daniel!")
+#reverse_each_word("Hello my name is daniel!")
